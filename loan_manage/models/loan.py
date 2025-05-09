@@ -9,7 +9,7 @@ class LoanApplication(models.Model):
     _name = 'loan.application'
     _description = 'Loan Application'
 
-    # Add fields
+    # Add fields 123
     name = fields.Char(string='Loan Reference', required=True, copy=False, readonly=True, default='New')
     customer_id = fields.Many2one('res.partner', string='Customer', required=True)
     customer_email=fields.Char(related='customer_id.email', string="Customer Email", readonly=True)
